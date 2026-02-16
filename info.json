@@ -1,0 +1,21 @@
+{
+  "name": "K2-remove-steel-pipes",
+  "version": "1.0",
+  "title": "Krastorio 2 remove steel pipes",
+  "author": "Nezgal",
+  "homepage": "https://github.com/Nezgal/K2-remove-steel-pipes",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base",
+    "Krastorio2",
+    "? FluidMustFlow",
+    "? pipe_plus"
+  ],
+  "description": "Removes everything related to steel pipes in Krastorio 2 and reworks some technologies requirements. Integrates with Fluid must flow
+  - Removes steel pipes, steel underground pipe, steel pump
+  - Replaces steel pipe ingredient with pipe in the recipes for : big storage tank, huge storage tank, advanced chemical plant, matter plant, matter associator
+  - Technology steel fluid tanks requires fluid handling instead of steel fluid handling
+  - FMF ducts require steel fluid tanks. Tech price changed. Iron plates and gears replaced with steel equivalent
+  - Remove basic tech card from technologies : steel fluid tanks, gas power station, fuel, silicon processing, advanced lab
+  - Remove logistic tech card from : flare stack"
+}
