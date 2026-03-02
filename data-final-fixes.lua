@@ -93,6 +93,20 @@ if mods["FluidMustFlow"] then
         add_ingredient("duct-long", { type = "item", name = "steel-plate", amount = 8 })
         remove_ingredient("duct-long", "iron-plate")
     end
+
+    data.raw.item["pipe"].subgroup = "ducts"
+    data.raw.item["pipe-to-ground"].subgroup = "ducts"
+    data.raw.item["pump"].subgroup = "ducts"
+
+    if mods["elevated-pipes"] then
+        data.raw.item["elevated-pipe"].subgroup = "ducts"
+        data.raw.item["elevated-pipe"].order = "c[pipe]-a[elevated-pipe]"
+    end
+
+    if mods["pipe_plus"] then
+        data.raw.item["pipe-to-ground-2"].subgroup = "ducts"
+        data.raw.item["pipe-to-ground-3"].subgroup = "ducts"
+    end
 end
 
 if mods["pipe_plus"] then

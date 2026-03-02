@@ -9,7 +9,8 @@
     "base",
     "Krastorio2",
     "? FluidMustFlow",
-    "? pipe_plus"
+    "? pipe_plus",
+    "? elevated-pipes"
   ],
   "description": "Removes everything related to steel pipes in Krastorio 2 and reworks some technologies requirements. Integrates with Fluid must flow
   - Removes steel pipes, steel underground pipe, steel pump
