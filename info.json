@@ -10,7 +10,8 @@
     "Krastorio2",
     "? FluidMustFlow",
     "? pipe_plus",
-    "? elevated-pipes"
+    "? elevated-pipes",
+    "? valves"
   ],
   "description": "Removes everything related to steel pipes in Krastorio 2 and reworks some technologies requirements. Integrates with Fluid must flow
   - Removes steel pipes, steel underground pipe, steel pump
@@ -18,5 +19,6 @@
   - Technology steel fluid tanks requires fluid handling instead of steel fluid handling
   - FMF ducts require steel fluid tanks. Tech price changed. Iron plates and gears replaced with steel equivalent
   - Remove basic tech card from technologies : steel fluid tanks, gas power station, fuel, silicon processing, advanced lab
-  - Remove logistic tech card from : flare stack"
+  - Remove logistic tech card from : flare stack
+  - Sorts all types of pipes in ducts category if FMF is installed"
 }

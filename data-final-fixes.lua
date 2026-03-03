@@ -107,6 +107,12 @@ if mods["FluidMustFlow"] then
         data.raw.item["pipe-to-ground-2"].subgroup = "ducts"
         data.raw.item["pipe-to-ground-3"].subgroup = "ducts"
     end
+
+    if mods["valves"] then
+        data.raw.item["valves-overflow"].subgroup = "ducts"
+        data.raw.item["valves-top_up"].subgroup = "ducts"
+        data.raw.item["valves-one_way"].subgroup = "ducts"
+    end
 end
 
 if mods["pipe_plus"] then
