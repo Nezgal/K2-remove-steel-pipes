@@ -48,9 +48,26 @@ add_ingredient("kr-matter-plant", { type = "item", name = "pipe", amount = 20 })
 remove_ingredient("kr-matter-plant", "kr-steel-pipe")
 add_ingredient("kr-matter-associator", { type = "item", name = "pipe", amount = 8 })
 remove_ingredient("kr-matter-associator", "kr-steel-pipe")
--- remove_item("kr-steel-pipe")
--- remove_item("kr-steel-underground-pipe")
--- remove_item("kr-steel-pump")
+
+data.raw.pump["pump"].next_upgrade = nil
+data.raw.item["kr-steel-pipe"].enabled = false
+data.raw.item["kr-steel-pipe"].hidden = true
+data.raw.item["kr-steel-pipe"].hidden_in_factoriopedia = true
+data.raw.recipe["kr-steel-pipe"].enabled = false
+data.raw.recipe["kr-steel-pipe"].hidden = true
+data.raw.recipe["kr-steel-pipe"].hidden_in_factoriopedia = true
+data.raw.item["kr-steel-pipe-to-ground"].enabled = false
+data.raw.item["kr-steel-pipe-to-ground"].hidden = true
+data.raw.item["kr-steel-pipe-to-ground"].hidden_in_factoriopedia = true
+data.raw.recipe["kr-steel-pipe-to-ground"].enabled = false
+data.raw.recipe["kr-steel-pipe-to-ground"].hidden = true
+data.raw.recipe["kr-steel-pipe-to-ground"].hidden_in_factoriopedia = true
+data.raw.item["kr-steel-pump"].enabled = false
+data.raw.item["kr-steel-pump"].hidden = true
+data.raw.item["kr-steel-pump"].hidden_in_factoriopedia = true
+data.raw.recipe["kr-steel-pump"].enabled = false
+data.raw.recipe["kr-steel-pump"].hidden = true
+data.raw.recipe["kr-steel-pump"].hidden_in_factoriopedia = true
 
 data.raw.technology["kr-steel-fluid-tanks"].unit = { time = 30, count = 120, ingredients = { { "automation-science-pack", 1 }, { "logistic-science-pack", 1 } } }
 data.raw.technology["kr-gas-power-station"].unit = { time = 30, count = 250, ingredients = { { "automation-science-pack", 1 }, { "logistic-science-pack", 1 } } }
@@ -60,6 +77,8 @@ data.raw.technology["kr-advanced-lab"].unit = { time = 30, count = 300, ingredie
 data.raw.technology["kr-fluid-excess-handling"].unit = { time = 45, count = 150, ingredients = { { "kr-basic-tech-card", 1 }, { "automation-science-pack", 1 } } }
 
 data.raw.technology["kr-steel-fluid-handling"].enabled= false
+data.raw.technology["kr-steel-fluid-handling"].hidden= true
+data.raw.technology["kr-steel-fluid-handling"].hidden_in_factoriopedia= true
 
 -- remove_tech_ingredient("kr-steel-fluid-tanks", "kr-basic-tech-card")
 -- remove_tech_ingredient("kr-gas-power-station", "kr-basic-tech-card")
