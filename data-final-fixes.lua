@@ -36,8 +36,9 @@ end
 --     end
 -- end
 
-add_prerequisite("kr-steel-fluid-tanks", "fluid-handling")
-remove_prerequisite("kr-steel-fluid-tanks", "kr-steel-fluid-handling")
+data.raw.technology["kr-steel-fluid-tanks"].prerequisites = {"fluid-handling"}
+-- add_prerequisite("kr-steel-fluid-tanks", "fluid-handling")
+-- remove_prerequisite("kr-steel-fluid-tanks", "kr-steel-fluid-handling")
 add_ingredient("kr-big-storage-tank", { type = "item", name = "pipe", amount = 8 })
 remove_ingredient("kr-big-storage-tank", "kr-steel-pipe")
 add_ingredient("kr-huge-storage-tank", { type = "item", name = "pipe", amount = 24 })
